@@ -1,0 +1,25 @@
+:root{
+    --red: #f9032f;
+    --black: #000000;
+    --white: #ffffff;
+    --blue: #0000ff;
+
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar{
+    background: var(--black);
+    height: 80px;
+    padding: 0.5rem calc(100vw - 1200px) / 2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+
