@@ -12,7 +12,7 @@
     
 
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <button class="navbar-toggler" type="button" data-toggle="collapse" 
                 data-target="#navbar" aria-controls="navbar" aria-expanded="false" 
                 aria-label="Toggle navigation">
@@ -35,23 +35,61 @@
             </a>
         </div>
     </nav>
-    
+    <p></p>
+
     <!-- Content of Page -->
-    <div class="container text-center">
-        <div class="row">
-          <div class="col">
+    <div class="container-fluid text-left">
+        <div class="row justify-content-md-center">
+          <div class="col-md-auto">
             <img src="../resources/img/GenericMePicture.png" alt="Profile Picture" style="width: 400px;">
             
           </div>
-          <div class="col-6">
-            <h1> About Me</h1>
-            <p> Summary here</p>
-            <a class="btn btn-primary" href="resume.html" role="button">Resume</a>
+          <div class="col-md-6">
+              <div class="p-3 mb-2 bg-secondary text-white">
+                <h1> About Me</h1>
+                <p> Hello, my name is Joe Zakrzewski and I am currently enrolled in CSCI3308 Software Development at 
+                  University of Colorado Boulder. I am a junior and currently looking forward to graduating in December of 2026. The 
+                  reason behind this website currently is to demonstrate my understanding of HTML, CSS, and Bootstrap integration.
+                </p>
+                <p>
+                  I have a passion for database design, integration, and management for which I plan to refine my understanding of with a 
+                  future career in cyber security. 
+                </p>
+                <a class="btn btn-primary" href="resume.html" role="button">Resume</a>
+              </div>
           </div>
         </div>
     </div>
       
     <!-- Footer -->
+    <footer class="footer fixed-bottom bg-dark text-center">
+      <h1 class="sr-only" >Footer</h1>
+      <p></p>
+      <div class="container text-center">
+        <div class="row justify-content-center">
+          <div class="col-auto">
+            <p>
+            <a href="https://github.com/Joe-Z-School" target="_blank">
+            <img src="../resources/img/github.svg" alt="GitHub Logo" width="30" height="30">
+            </a>
+            </p>
+          </div>
 
+          <div class="col-auto">
+            <p>
+            <a href="https://x.com/?lang=en" target="_blank">
+            <img src="../resources/img/twitter-x.svg" alt="Twitter X Logo" width="30" height="30">
+            </p>
+            </a>
+          </div>
+
+          <div class="col-auto">
+            <p>
+            <a href="https://www.linkedin.com/" target="_blank">
+            <img src="../resources/img/linkedin.svg" alt="Linkedin Logo" width="30" height="30">
+            </p>
+            </a>
+          </div>
+      </div>
   </body>
 </html>
