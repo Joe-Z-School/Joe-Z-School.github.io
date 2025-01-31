@@ -1,25 +1,28 @@
 <!DOCTYPE html>
 <html>
   <head>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Projects Page</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
   </head>
   <body>
     <!-- Bootstrap Required (JQuery and Bootstrap Bundle)-->
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
     
 
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <button class="navbar-toggler" type="button" data-toggle="collapse" 
                 data-target="#navbar" aria-controls="navbar" aria-expanded="false" 
                 aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbar">
-          <ul class="navbar-nav mr-auto">
+          <ul class="navbar-nav me-auto">
             <li class="nav-item">
               <a class="nav-link" href="home.html">Home</a>
             </li>
@@ -27,16 +30,100 @@
               <a class="nav-link" href="hobbies.html">Hobbies</a>
             </li>
             <li class="nav-item active">
-              <a class="nav-link" href="projects.html">Projects <span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="projects.html">Projects </a>
             </li>
           </ul>
-          <a class="navbar-brand" href="#">
-            <img src="../resources/img/TopCornerImage.png" alt="Logo" style="width:40px;">
-          </a>
+            <ul class="nav navbar-nav navbar-right">
+              <span class="navbar-brand">
+                <img src="../resources/img/TopCornerImage.png" alt="Logo" style="width:40px;">
+              </span>
+            </ul>          
         </div>
-      </nav>
+    </nav>
     
-    <h1>My First Heading on Projects Page</h1>
-    <p>My first paragraph.</p>
+    <!-- Content of Page -->
+    <p></p>
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-8">
+          <div id="projectsCarousel" class="carousel slide">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#projectsCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#projectsCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#projectsCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="../resources/img/databaseProject.jpg" class="d-block w-100" alt="Background with Database Tower">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Personal Movie Database</h5>
+                  <p>The most recent project I have worked on is a local database that holds information on all the movies I currently own. 
+                    This database is built using MySQL and C++ and allows the intake of standard CRUD operations. This project is still under development 
+                    and will include a GUI for a user to interact and leave movie ratings.
+                  </p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="../resources/img/tictactoeProject.jpg" class="d-block w-100" alt="Background with Tic-Tac-Toe boards">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Tic-Tac-Toe</h5>
+                  <p>A fun project I worked on was a Tic-Tac-Toe game that can be played either with two people, or with one 
+                    person against a computer. I built this project using C++ and was a fun introduction to OOP for me.
+                  </p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="../resources/img/calculatorProject.jpg" class="d-block w-100" alt="Background with mathematical equations">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Scientific Calculator</h5>
+                  <p>The very first project I worked on was a Scientific Calculator that introduced me to the basics of Libraries and algorithms. 
+                    This project was built using C++ and was a great way to learn about the different data types and widely used Libraries.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#projectsCarousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#projectsCarousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+    <!-- Footer -->
+    <footer class="footer fixed-bottom bg-dark text-center">
+      <p></p>
+      <div class="container text-center">
+        <div class="row justify-content-center">
+          <div class="col-auto">
+            <p>
+            <a href="https://github.com/Joe-Z-School" target="_blank">
+            <img src="../resources/img/github.svg" alt="GitHub Logo" width="30" height="30">
+            </a>
+            </p>
+          </div>
+
+          <div class="col-auto">
+            <p>
+            <a href="https://x.com/?lang=en" target="_blank">
+            <img src="../resources/img/twitter-x.svg" alt="Twitter X Logo" width="30" height="30">            
+            </a>
+            </p>
+          </div>
+
+          <div class="col-auto">
+            <p>
+            <a href="https://www.linkedin.com/" target="_blank">
+            <img src="../resources/img/linkedin.svg" alt="Linkedin Logo" width="30" height="30">
+            </a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
